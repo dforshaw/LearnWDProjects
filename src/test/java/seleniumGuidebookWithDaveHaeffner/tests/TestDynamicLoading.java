@@ -1,9 +1,9 @@
-package selenium_guidebook_with_davehaeffner.tests;
+package seleniumGuidebookWithDaveHaeffner.tests;
 
 
 import org.junit.Before;
 import org.junit.Test;
-import selenium_guidebook_with_davehaeffner.pageobjects.DynamicLoading;
+import seleniumGuidebookWithDaveHaeffner.pageobjects.DynamicLoading;
 
 import static org.junit.Assert.assertTrue;
 

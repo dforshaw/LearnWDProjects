@@ -1,4 +1,4 @@
-package selenium_guidebook_with_davehaeffner.pageobjects;
+package seleniumGuidebookWithDaveHaeffner.pageobjects;
 
 
 import org.openqa.selenium.By;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import selenium_guidebook_with_davehaeffner.tests.Config;
+import seleniumGuidebookWithDaveHaeffner.tests.Config;
 
 public class Base implements Config {
 

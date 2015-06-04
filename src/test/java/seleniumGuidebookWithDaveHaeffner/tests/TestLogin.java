@@ -1,8 +1,8 @@
-package selenium_guidebook_with_davehaeffner.tests;
+package seleniumGuidebookWithDaveHaeffner.tests;
 
 import org.junit.Before;
 import org.junit.Test;
-import selenium_guidebook_with_davehaeffner.pageobjects.Login;
+import seleniumGuidebookWithDaveHaeffner.pageobjects.Login;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

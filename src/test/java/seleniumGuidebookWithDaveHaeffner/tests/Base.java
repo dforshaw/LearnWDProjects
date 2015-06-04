@@ -1,4 +1,4 @@
-package selenium_guidebook_with_davehaeffner.tests;
+package seleniumGuidebookWithDaveHaeffner.tests;
 
 import org.junit.Rule;
 import org.junit.rules.ExternalResource;

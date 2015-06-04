@@ -1,4 +1,4 @@
-package selenium_guidebook_with_davehaeffner.pageobjects;
+package seleniumGuidebookWithDaveHaeffner.pageobjects;
 
 
 import org.openqa.selenium.By;

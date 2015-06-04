@@ -1,4 +1,4 @@
-package selenium_guidebook_with_davehaeffner.tests;
+package seleniumGuidebookWithDaveHaeffner.tests;
 
 public interface Config {
 
