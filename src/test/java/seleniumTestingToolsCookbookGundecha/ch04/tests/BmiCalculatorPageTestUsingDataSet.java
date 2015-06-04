@@ -1,28 +1,24 @@
-package selenium_testing_tools_cookbook_gundecha.ch04.tests;
-
+package seleniumTestingToolsCookbookGundecha.ch04.tests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import seleniumTestingToolsCookbookGundecha.ch04.pageobjects.BmiCalculatorPage;
 
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collection;
 
-import static selenium_testing_tools_cookbook_gundecha.ch04.pageobjects.BmiCalculatorPage.*;
-import static selenium_testing_tools_cookbook_gundecha.ch04.utilities.LoadDataFromCsvFile.getTestData;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
-
 /**
  *  This class tests the BMI Calculation page
  *
- *  Using test data from an external CSV file
+ *  Using test data from an internal object
  */
 
 @RunWith(value = Parameterized.class)
-public class BmiCalculatorPageTestUsingDataFromCsv extends BaseTestSetup {
+public class BmiCalculatorPageTestUsingDataSet extends BaseTestSetup {
 
     private String height;
     private String weight;
@@ -30,11 +26,17 @@ public class BmiCalculatorPageTestUsingDataFromCsv extends BaseTestSetup {
     private String bmiCategory;
 
     @Parameters
-    public static Collection<String[]> data() throws IOException {
-        return getTestData("src\\test\\java\\selenium_testing_tools_cookbook_gundecha\\ch04\\resources\\data.csv");
+    public static Collection<Object[]> data() {
+        Object[][] data = new  Object[][]{
+                {"160","45","17.6","Underweight"},
+                {"168","70","24.8","Normal"},
+                {"181","89","27.2","Overweight"},
+                {"178","100","31.6","Obesity"}
+        };
+        return Arrays.asList(data);
     }
 
-    public BmiCalculatorPageTestUsingDataFromCsv (String height, String weight, String bmi, String bmiCategory) {
+    public BmiCalculatorPageTestUsingDataSet (String height, String weight, String bmi, String bmiCategory) {
         this.height = height;
         this.weight =  weight;
         this.bmi = bmi;

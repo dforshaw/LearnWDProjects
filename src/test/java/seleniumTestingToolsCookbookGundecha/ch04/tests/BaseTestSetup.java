@@ -1,4 +1,4 @@
-package selenium_testing_tools_cookbook_gundecha.ch04.tests;
+package seleniumTestingToolsCookbookGundecha.ch04.tests;
 
 import org.junit.After;
 import org.junit.Before;

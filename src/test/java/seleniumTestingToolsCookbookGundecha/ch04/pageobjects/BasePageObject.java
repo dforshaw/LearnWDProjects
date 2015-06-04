@@ -1,4 +1,4 @@
-package selenium_testing_tools_cookbook_gundecha.ch04.pageobjects;
+package seleniumTestingToolsCookbookGundecha.ch04.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 

@@ -1,4 +1,4 @@
-package selenium_testing_tools_cookbook_gundecha.ch04.utilities;
+package seleniumTestingToolsCookbookGundecha.ch04.utilities;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
