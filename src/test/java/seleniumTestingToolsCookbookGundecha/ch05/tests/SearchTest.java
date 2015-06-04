@@ -1,9 +1,7 @@
 package seleniumTestingToolsCookbookGundecha.ch05.tests;
 
 // page 156
-import seleniumTestingToolsCookbookGundecha.ch05.pageobjects.HomePage;
-import seleniumTestingToolsCookbookGundecha.ch05.pageobjects.Search;
-import seleniumTestingToolsCookbookGundecha.ch05.pageobjects.SearchResults;
+import seleniumTestingToolsCookbookGundecha.ch05.pageobjects.*;
 
 import org.junit.Test;
 
@@ -18,10 +16,10 @@ public class SearchTest {
 
         homePage.get();
 
-        SearchResults searchResult = homePage.search().searchInStore("Sony");
+        SearchResults searchResult = homePage.search().searchInStore("Chelsea");
 
         assertEquals(2, searchResult.getProducts().size());
-        assertTrue(searchResult.getProducts().contains("Sony Ericsson W810i"));
+        assertTrue(searchResult.getProducts().contains("CHELSEA TEE"));
 
         searchResult.close();
 

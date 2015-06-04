@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class HomePage extends LoadableComponent<HomePage> {
 
     static String url = "http://demo.magentocommerce.com/";
-    private static String title = "Home page - Magento Commerce Demo Store";
+    private static String title = "Madison Island";
 
     public HomePage() {
         PageFactory.initElements(Browser.driver(), this);
