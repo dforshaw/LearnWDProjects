@@ -1,6 +1,6 @@
 package seleniumTestingToolsCookbookGundecha.ch05.pageobjects;
 
-// page 156
+// Chapter 5 : Implementing nested Page Object instances
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

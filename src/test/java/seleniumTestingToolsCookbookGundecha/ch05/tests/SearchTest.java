@@ -1,6 +1,7 @@
 package seleniumTestingToolsCookbookGundecha.ch05.tests;
 
-// page 156
+// Chapter 5 : Implementing nested Page Object instances
+
 import seleniumTestingToolsCookbookGundecha.ch05.pageobjects.*;
 
 import org.junit.Test;
