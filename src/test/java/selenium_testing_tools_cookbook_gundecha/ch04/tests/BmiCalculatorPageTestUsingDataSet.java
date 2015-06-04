@@ -10,6 +10,7 @@ import java.util.Collection;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static selenium_testing_tools_cookbook_gundecha.ch04.pageobjects.*;
 
 /**
  *  This class tests the BMI Calculation page

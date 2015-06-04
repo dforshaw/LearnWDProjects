@@ -1,5 +1,6 @@
 package selenium_testing_tools_cookbook_gundecha.ch04.tests;
 
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -8,7 +9,8 @@ import org.junit.runners.Parameterized.Parameters;
 import java.io.IOException;
 import java.util.Collection;
 
-import static com.utilities.LoadDataFromCsvFile.getTestData;
+import static selenium_testing_tools_cookbook_gundecha.ch04.pageobjects.BmiCalculatorPage.*;
+import static selenium_testing_tools_cookbook_gundecha.ch04.utilities.LoadDataFromCsvFile.getTestData;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -29,7 +31,7 @@ public class BmiCalculatorPageTestUsingDataFromCsv extends BaseTestSetup {
 
     @Parameters
     public static Collection<String[]> data() throws IOException {
-        return getTestData("src\\test\\resources\\data.csv");
+        return getTestData("src\\test\\java\\selenium_testing_tools_cookbook_gundecha\\ch04\\resources\\data.csv");
     }
 
     public BmiCalculatorPageTestUsingDataFromCsv (String height, String weight, String bmi, String bmiCategory) {
