@@ -1,7 +1,7 @@
-package selenium_testing_tools_cookbook_gundecha.tests;
+package selenium_testing_tools_cookbook_gundecha.ch05.tests;
 
 // page 156
-import selenium_testing_tools_cookbook_gundecha.pageobjects.*;
+import selenium_testing_tools_cookbook_gundecha.ch05.pageobjects.*;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package selenium_testing_tools_cookbook_gundecha.pageobjects;
+package selenium_testing_tools_cookbook_gundecha.ch05.pageobjects;
 
 // page 156
 
