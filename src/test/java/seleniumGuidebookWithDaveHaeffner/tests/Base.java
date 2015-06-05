@@ -3,9 +3,10 @@ package seleniumGuidebookWithDaveHaeffner.tests;
 import org.junit.Rule;
 import org.junit.rules.ExternalResource;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Base {
+public class Base implements Config {
 
     protected WebDriver driver;
 
@@ -14,7 +15,13 @@ public class Base {
 
         @Override
         protected void before() throws Throwable {
-            driver = new FirefoxDriver();
+
+            if (browser.equals("firefox")) {
+                driver = new FirefoxDriver();
+            } else if (browser.equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/vendor/chromedriver");
+                driver = new ChromeDriver();
+            }
         }
 
         @Override
