@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * This class contains variables and methods common to the other test classes in this package
  */
 
-public class BaseTestSetup {
+public class BaseTestSetup implements Config {
 
     WebDriver driver;
 

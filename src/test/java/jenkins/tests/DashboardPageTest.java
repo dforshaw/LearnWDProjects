@@ -1,11 +1,12 @@
 package jenkins.tests;
 
+import jenkins.pageobjects.DashboardPage;
+import jenkins.pageobjects.NewJobPage;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-
-import jenkins.pageobjects.*;
 
 /**
  * This class tests the Jenkins Dashboard page
@@ -23,6 +24,7 @@ public class DashboardPageTest extends BaseTestSetup {
     }
 
     // Add test for New Job link
+    @Ignore
     @Test
     public void clickNewJobLinkLoadsCorrectPage() {
         DashboardPage dashboardPage = new DashboardPage(driver);

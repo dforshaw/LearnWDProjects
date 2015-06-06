@@ -15,9 +15,9 @@ public class NewJobPage extends BasePageObject {
 
     public NewJobPage(WebDriver driver) {
         super(driver);
-
+        pageTitle = driver.getTitle();
         if (!"New Job [Jenkins]".equals(pageTitle)) {
-            driver.get(BaseUrl + "/" + "view/All/newJob");
+            visit("/view/All/newJob");
         }
     }
 
@@ -30,7 +30,7 @@ public class NewJobPage extends BasePageObject {
 
     @Override
     protected void load() {
-        driver.get(BaseUrl + "/" + "view/All/newJob");
+        visit("/view/All/newJob");
     }
 
     @Override
