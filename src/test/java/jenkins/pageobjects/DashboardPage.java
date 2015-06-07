@@ -17,9 +17,9 @@ public class DashboardPage extends BasePageObject {
 
     public DashboardPage(WebDriver driver) {
         super(driver);
-
+        pageTitle = driver.getTitle();
         if (!"Dashboard [Jenkins]".equals(pageTitle)) {
-            driver.get(BaseUrl + "/");
+            visit(baseUrl + "/");
         }
     }
 
@@ -32,7 +32,7 @@ public class DashboardPage extends BasePageObject {
 
     @Override
     protected void load() {
-        driver.get(BaseUrl + "/");
+        visit(baseUrl + "/");
     }
 
     @Override
